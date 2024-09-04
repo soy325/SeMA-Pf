@@ -1,0 +1,740 @@
+@font-face {
+    font-family: 'Interop';
+    src: url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff2') format('woff2'),
+        url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    font-family: 'Interop';
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.just-c {
+    justify-content: center;
+}
+
+.just-sb {
+    justify-content: space-between;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.wrap {
+    width: 1800px;
+    margin: auto;
+}
+
+/* header */
+header {
+    height: 100px;
+    background: #000;
+    color: #fff;
+}
+
+.header-inner {
+    height: 100%;
+}
+
+header h1 img {
+    width: 250px;
+}
+
+nav {
+    width: 60%;
+    align-self: flex-end;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+}
+
+nav li.main-menu {
+    position: relative;
+    flex: 1;
+}
+
+nav li.main-menu>a {
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: -1px;
+}
+
+nav li.main-menu:hover>a {
+    background: #333;
+}
+
+nav ul.sub-menu a {
+    font-size: 18px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+nav ul.sub-menu li:hover a {
+    background: #fff;
+    color: #000;
+}
+
+nav ul.sub-menu {
+    width: 100%;
+    position: absolute;
+    display: none;
+    z-index: 99;
+}
+
+.header-icon {
+    gap: 30px;
+    align-self: flex-end;
+}
+
+
+
+/* sect1 */
+
+.sect1 li {
+    width: 50%;
+}
+
+.sect1 video {
+    width: 900px;
+}
+
+.sect1 .pink {
+    color: #ED3DA6;
+    font-size: 32px;
+    padding: 20px;
+    font-weight: 700;
+
+}
+
+.sect1 li h2 {
+    font-size: 45px;
+    line-height: 72px;
+    padding: 10px;
+}
+
+.col-slide {
+    font-size: 25px;
+    padding: 170px 10px 20px 10px;
+    line-height: 35px;
+}
+
+.main-img {
+    position: relative;
+    padding: 10px 10px;
+}
+
+.main-img p {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-img p {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 19%;
+    right: -14%;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.main-container {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+}
+
+.main-wrap {
+    position: relative;
+}
+
+.main-wrap>li {
+    position: relative;
+    width: 100%;
+}
+
+.col-container {
+    width: 100%;
+    height: 260px;
+
+}
+
+.col-wrap {
+    position: relative;
+}
+
+.col-wrap>li {
+    position: relative;
+    width: 100%;
+}
+
+.video-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-wrap {
+    width: 300%;
+    position: relative;
+}
+
+.video-slide {
+    flex: 1;
+}
+
+.slide_nav {
+    width: fit-content;
+    /* 가지고 있는 content의 크기만큼 */
+    display: flex;
+    gap: 15px;
+    margin: 30px auto 0;
+}
+
+.slide_nav span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.slide_nav span.on {
+    background: #333;
+}
+
+.slide_nav .arrow {
+    font-style: normal;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.slide_nav .arrow:hover {
+    color: #333;
+}
+
+/* sect2 */
+.sect2 ul {
+    margin-top: 100px;
+    height: 200px;
+}
+
+.sect2 .black {
+    width: 20%;
+    background: #000;
+    color: #fff;
+}
+
+.sect2 .black h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 74px;
+    padding-bottom: 15px;
+}
+
+.sect2 .black p {
+    display: inline-block;
+}
+
+.sect2 .black p:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.sect2 .gray {
+    width: 20%;
+    background: #D9D9D9;
+}
+
+.sect2 .gray h2 {
+    align-self: flex-end;
+    font-size: 28px;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 10px;
+}
+
+.sect2 .gray h2:hover {
+    border-bottom: 1px solid #000;
+}
+
+
+.sect2 .gray .summary {
+    padding: 20px 10px;
+}
+
+.sect2 .gray p {
+    padding: 10px 10px;
+}
+
+.sect2 .gray img {
+    width: 100px;
+}
+
+.sect2 .rightgray {
+    padding: 90px 25px 0 25px;
+    width: 15%;
+    background: #F8F8F8;
+}
+
+.sect2 .rightgray img {
+    height: 100px;
+}
+
+.sect2 .rightgray a {
+    font-size: 25px;
+    align-self: flex-end;
+    margin-bottom: 16px;
+}
+
+.sect2 .rightgray a:hover {
+    border-bottom: 1px solid #000;
+}
+
+
+/******************************* sect3 */
+
+.sect3 .program li:nth-child(1):before {
+    content: url(../images/pink.png);
+}
+
+.sect3 .program li:nth-child(2):before {
+    content: url(../images/purple.png);
+}
+
+.sect3 .program li:nth-child(3):before {
+    content: url(../images/yellow.png);
+}
+
+.calender {
+    margin-top: 110px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.sect3 .calender::before {
+    content: url(../images/Calendar.svg);
+}
+
+.sect3 .calender::after {
+    content: url(../images/arrow.svg);
+}
+
+
+.sect3 .contants {
+    margin: 100px;
+    flex-wrap: wrap;
+}
+
+.sect3 .contants>li {
+    width: 25%;
+    height: 400px;
+    position: relative;
+    border-right: 1px solid #000;
+    cursor: pointer;
+}
+
+.sect3 li.none {
+    border: none;
+}
+
+.contants-main img {
+    width: 398px;
+
+}
+
+/* .sect3 .contants>li:nth-child(-n+4) {
+    border-bottom: 1px solid #000;
+} */
+.sect3 .contants>li:nth-child(-n+4)::before {
+    content: '';
+    width: 92%;
+    height: 1px;
+    background: #000;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+
+.contants h2 {
+    padding: 100px 10px 10px 10px;
+    font-size: 28px;
+}
+
+.program li {
+    padding: 5px 10px;
+}
+
+.contants .box {
+    padding-top: 50px;
+}
+
+.contants .box p {
+    font-size: 20px;
+}
+
+.contants .conteiner h3 {
+    padding: 30px 0 100px 10px;
+    font-size: 26px;
+}
+
+.contants .conteiner p {
+    font-size: 19px;
+    padding: 8px 0px 0px 10px;
+}
+
+.sect3 .contants>li::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    display: none;
+}
+
+/* images-hover */
+.sect3 .contants>li:nth-child(3)::after {
+    content: url(../images/전시-2.jpg);
+}
+
+.sect3 .contants>li:nth-child(4)::after {
+    content: url(../images/전시-3.jpg);
+}
+
+.sect3 .contants>li:nth-child(5)::after {
+    content: url(../images/교육프로그램1.jpg);
+}
+
+.sect3 .contants>li:nth-child(6)::after {
+    content: url(../images//교육프로그램2.jpg);
+}
+
+.sect3 .contants>li:nth-child(7)::after {
+    content: url(../images/문화행사1.jpg);
+}
+
+.sect3 .contants>li:nth-child(8)::after {
+    content: url(../images/문화행사2.jpg);
+}
+
+.contants li:nth-child(3):hover::after {
+    display: block;
+}
+
+.contants li:nth-child(4):hover::after {
+    display: block;
+}
+
+.contants li:nth-child(5):hover::after {
+    display: block;
+}
+
+.contants li:nth-child(6):hover::after {
+    display: block;
+}
+
+.contants li:nth-child(7):hover::after {
+    display: block;
+}
+
+.contants li:nth-child(8):hover::after {
+    display: block;
+}
+
+/* sect4 *******************************/
+.sect4 h2 {
+    background: #000;
+    height: 70px;
+    color: #fff;
+    font-size: 27px;
+    padding-left: 20px;
+    line-height: 70px;
+    /* display: flex;
+    align-items: center; */
+}
+
+.gallery {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 53vh;
+}
+
+.gallery li {
+    width: 500px;
+    flex: 1;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery li:last-child {
+    border-right: none;
+}
+
+.gallery li::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery li:nth-child(1)::before {
+    background: url(../images/arc1.jpg) no-repeat center center;
+}
+
+.gallery li:nth-child(2)::before {
+    background: url(../images/arc2.jpg) no-repeat center center;
+}
+
+.gallery li:nth-child(3)::before {
+    background: url(../images/arc3.jpg) no-repeat center center;
+}
+
+.gallery li:nth-child(4)::before {
+    background: url(../images/arc4.jpg) no-repeat center center;
+}
+
+.gallery li.on {
+    flex: 3;
+}
+
+.gallery li.on::before {
+    filter: grayscale(1);
+}
+
+.gallery li .detail {
+    position: absolute;
+    top: 1%;
+    left: 13%;
+    color: #dcb57e;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 1s;
+    font-size: 70px;
+    writing-mode: vertical-rl;
+}
+
+.gallery li.on .detail {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.gallery .content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    bottom: -260px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.gallery li.on .content {
+    bottom: 0;
+    transition-delay: 0.3s;
+}
+
+.content h3 {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.content p {
+    line-height: 25px;
+    font-weight: 200;
+}
+
+/* sect5 ****************************************/
+.sect5 ul {
+    margin: auto;
+    width: 80%;
+    gap: 10px;
+}
+
+.sect5 li {
+    width: 50%;
+}
+
+.sect5>h2 {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 40px;
+}
+
+.sect5 .review {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.review>h2 {
+    padding-bottom: 10px;
+}
+
+.sect5 .event {
+    padding-bottom: 10px
+}
+
+.sect5 .star {
+    width: 90px;
+}
+
+/* sect6 ****************************************/
+.sect6 {
+    margin-top: 50px;
+    background: #EAEAEA;
+    height: 500px;
+    position: relative;
+}
+
+.sect6 h2 {
+    display: inline-block;
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    font-size: 40px;
+}
+
+
+.main {
+    width: 30%;
+}
+
+.sub {
+    width: 70%;
+}
+
+.tab-menu {
+    border-bottom: 3px solid #000;
+    margin-right: 220px;
+}
+
+.tab-menu li a {
+    display: block;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #7e7e7e;
+}
+
+.tab-menu ul {
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.Notice li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.Notice {
+    padding-right: 20px;
+}
+
+.News {
+    padding-right: 20px;
+}
+
+.Notice li:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+.Notice a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.News li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.News li:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+.News a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.tab-contants {
+    position: relative;
+    height: 455px;
+}
+
+.tab {
+    position: absolute;
+    display: none;
+    width: 1060px;
+    height: 100%;
+}
+
+.tab-menu li.on a {
+    color: #000;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.tab.on {
+    display: block;
+}
